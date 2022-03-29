@@ -23,11 +23,11 @@ DROP TABLE IF EXISTS `asiakas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `asiakas` (
-  `id_asiakas` int NOT NULL AUTO_INCREMENT,
+  `idasiakas` int NOT NULL AUTO_INCREMENT,
   `nimi` varchar(45) DEFAULT NULL,
   `lahiosoite` varchar(45) DEFAULT NULL,
   `puhelinnumero` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id_asiakas`)
+  PRIMARY KEY (`idasiakas`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -48,16 +48,16 @@ DROP TABLE IF EXISTS `kortti`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `kortti` (
-  `id_kortti` int NOT NULL AUTO_INCREMENT,
+  `idkortti` int NOT NULL AUTO_INCREMENT,
   `korttinumero` int DEFAULT NULL,
   `pin` varchar(255) DEFAULT NULL,
-  `id_asiakas` int DEFAULT NULL,
-  `id_tili` int DEFAULT NULL,
-  PRIMARY KEY (`id_kortti`),
-  KEY `id_tili` (`id_tili`),
-  KEY `id_asiakas` (`id_asiakas`),
-  CONSTRAINT `kortti_ibfk_1` FOREIGN KEY (`id_tili`) REFERENCES `tili` (`id_tili`) ON DELETE RESTRICT ON UPDATE CASCADE,
-  CONSTRAINT `kortti_ibfk_2` FOREIGN KEY (`id_asiakas`) REFERENCES `asiakas` (`id_asiakas`) ON DELETE RESTRICT ON UPDATE CASCADE
+  `idasiakas` int DEFAULT NULL,
+  `idtili` int DEFAULT NULL,
+  PRIMARY KEY (`idkortti`),
+  KEY `id_tili` (`idtili`),
+  KEY `id_asiakas` (`idasiakas`),
+  CONSTRAINT `kortti_ibfk_1` FOREIGN KEY (`idtili`) REFERENCES `tili` (`idtili`) ON DELETE RESTRICT ON UPDATE CASCADE,
+  CONSTRAINT `kortti_ibfk_2` FOREIGN KEY (`idasiakas`) REFERENCES `asiakas` (`idasiakas`) ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -78,10 +78,10 @@ DROP TABLE IF EXISTS `tili`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tili` (
-  `id_tili` int NOT NULL AUTO_INCREMENT,
+  `idtili` int NOT NULL AUTO_INCREMENT,
   `tilinumero` varchar(45) DEFAULT NULL,
   `saldo` float DEFAULT NULL,
-  PRIMARY KEY (`id_tili`)
+  PRIMARY KEY (`idtili`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -102,12 +102,12 @@ DROP TABLE IF EXISTS `tili_asiakas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tili_asiakas` (
-  `id_tili` int DEFAULT NULL,
-  `id_asiakas` int DEFAULT NULL,
-  KEY `id_tili` (`id_tili`),
-  KEY `id_asiakas` (`id_asiakas`),
-  CONSTRAINT `tili_asiakas_ibfk_1` FOREIGN KEY (`id_tili`) REFERENCES `tili` (`id_tili`) ON DELETE RESTRICT ON UPDATE CASCADE,
-  CONSTRAINT `tili_asiakas_ibfk_2` FOREIGN KEY (`id_asiakas`) REFERENCES `asiakas` (`id_asiakas`) ON DELETE RESTRICT ON UPDATE CASCADE
+  `idtili` int DEFAULT NULL,
+  `idasiakas` int DEFAULT NULL,
+  KEY `id_tili` (`idtili`),
+  KEY `id_asiakas` (`idasiakas`),
+  CONSTRAINT `tili_asiakas_ibfk_1` FOREIGN KEY (`idtili`) REFERENCES `tili` (`idtili`) ON DELETE RESTRICT ON UPDATE CASCADE,
+  CONSTRAINT `tili_asiakas_ibfk_2` FOREIGN KEY (`idasiakas`) REFERENCES `asiakas` (`idasiakas`) ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -128,15 +128,15 @@ DROP TABLE IF EXISTS `tilitapahtumat`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tilitapahtumat` (
-  `id_tilitapahtumat` int NOT NULL AUTO_INCREMENT,
+  `idtilitapahtumat` int NOT NULL AUTO_INCREMENT,
   `paivays` datetime DEFAULT NULL,
   `tapahtuma` varchar(45) DEFAULT NULL,
   `summa` float DEFAULT NULL,
-  `id_tili` int DEFAULT NULL,
-  `id_kortti` int DEFAULT NULL,
-  PRIMARY KEY (`id_tilitapahtumat`),
-  KEY `id_tili` (`id_tili`),
-  CONSTRAINT `tilitapahtumat_ibfk_1` FOREIGN KEY (`id_tili`) REFERENCES `tili` (`id_tili`) ON DELETE RESTRICT ON UPDATE CASCADE
+  `idtili` int DEFAULT NULL,
+  `idkortti` int DEFAULT NULL,
+  PRIMARY KEY (`idtilitapahtumat`),
+  KEY `id_tili` (`idtili`),
+  CONSTRAINT `tilitapahtumat_ibfk_1` FOREIGN KEY (`idtili`) REFERENCES `tili` (`idtili`) ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -158,4 +158,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-03-28 16:55:54
+-- Dump completed on 2022-03-29 15:10:05
