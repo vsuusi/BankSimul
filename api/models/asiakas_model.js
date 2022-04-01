@@ -26,3 +26,4 @@ const asiakas = {
   }
 };
 module.exports = asiakas;
+

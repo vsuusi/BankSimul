@@ -1,4 +1,6 @@
 const mysql = require('mysql');
+const dotenv = require('dotenv');
+dotenv.config();
 const connection = mysql.createPool({
   host: 'localhost',
   user: 'root',
@@ -6,9 +8,4 @@ const connection = mysql.createPool({
   database: 'testimaatti'
 });
 module.exports = connection; 
-/*
-const mysql = require('mysql');
-const myConnectionString = "mysql://admin:admin@localhost:3306/testimaatti";
-const connection = mysql.createPool(myConnectionString);
-module.exports = connection;
-*/
+
