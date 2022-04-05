@@ -7,31 +7,31 @@ const dotenv = require('dotenv');
 
 router.post('/', 
   function(request, response) {
-    if(request.body.username && request.body.password){
-      const user = request.body.username;
-      const pass = request.body.password;
+    if(request.body.korttinumero && request.body.pin){
+      const korttinumero = request.body.korttinumero;
+      const pin = request.body.pin; 
 
-        login.checkPassword(user, function(dbError, dbResult) {
+        login.checkPassword(korttinumero, function(dbError, dbResult) {
           if(dbError){
             response.json(dbError);
           }
           else{
             if (dbResult.length > 0) {
-              bcrypt.compare(pass,dbResult[0].password, function(err,compareResult) {
+              bcrypt.compare(pin,dbResult[0].pin, function(err,compareResult) {
                 if(compareResult) {
                   console.log("succes");
-                  const token = generateAccessToken({ username: user });
+                  const token = generateAccessToken({ korttinumero: korttinumero });
                   response.send(token);
                 }
                 else {
-                    console.log("wrong password");
+                    console.log("wrong PIN");
                     response.send(false);
                 }
               }
               );
             }
             else{
-              console.log("user does not exists");
+              console.log("korttinumero does not exists");
               response.send(false);
             }
           }
@@ -39,15 +39,15 @@ router.post('/',
         );
       }
     else{
-      console.log("username or password missing");
+      console.log("korttinumero or PIN missing");
       response.send(false);
     }
   }
 );
 
-function generateAccessToken(username) {
+function generateAccessToken(korttinumero) {
   dotenv.config();
-  return jwt.sign(username, process.env.MY_TOKEN, { expiresIn: '1800s' });
+  return jwt.sign(korttinumero, process.env.MY_TOKEN, { expiresIn: '1800s' });
 }
 
 module.exports=router;
