@@ -6,10 +6,22 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    objectpinInterface = new pinInterface;
+
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+    delete objectpinInterface;
+
+    ui = nullptr;
+    objectpinInterface = nullptr;
+}
+
+
+void MainWindow::on_btn_syotakortti_clicked()
+{
+    objectpinInterface->show();
 }
 
