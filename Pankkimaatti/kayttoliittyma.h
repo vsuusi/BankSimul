@@ -4,8 +4,13 @@
 #include "nostoikkuna.h"
 #include "tapahtumavirta.h"
 
+#include <QtNetwork>
+#include <QNetworkAccessManager>
+#include <QJsonDocument>
+
 #include <QDialog>
 #include <QDebug>
+#include <QTimer>
 
 
 namespace Ui {
@@ -27,10 +32,13 @@ private slots:
 
     void on_btn_kirjauduUlos_clicked();
 
+
 private:
+
     Ui::kayttoliittyma *ui;
     nostoikkuna *objectnostoikkuna;
     tapahtumavirta *objecttapahtumavirta;
+
 
 };
 
