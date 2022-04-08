@@ -8,6 +8,7 @@ kayttoliittyma::kayttoliittyma(QWidget *parent) :
     ui->setupUi(this);
     objectnostoikkuna = new nostoikkuna;
     objecttapahtumavirta = new tapahtumavirta;
+
 }
 
 kayttoliittyma::~kayttoliittyma()
@@ -23,18 +24,23 @@ kayttoliittyma::~kayttoliittyma()
 
 void kayttoliittyma::on_btn_nostaRahaa_clicked()
 {
-    objectnostoikkuna->show();
+    objectnostoikkuna->exec();
+
 }
 
 
 void kayttoliittyma::on_btn_tilitapahtumat_clicked()
 {
-    objecttapahtumavirta->show();
+    objecttapahtumavirta->exec();
+
 }
 
 
 void kayttoliittyma::on_btn_kirjauduUlos_clicked()
 {
-
+    this->close();
+    // ja katkaise yhteystietokantaan
 }
+
+
 

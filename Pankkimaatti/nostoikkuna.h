@@ -3,6 +3,11 @@
 
 #include <QDialog>
 
+#include <QtNetwork>
+#include <QNetworkAccessManager>
+#include <QJsonDocument>
+
+
 namespace Ui {
 class nostoikkuna;
 }
@@ -32,6 +37,9 @@ private slots:
 
 private:
     Ui::nostoikkuna *ui;
+    int nostoSumma = 0;
+    int saldo = 50;
+    int uusiSaldo;
 };
 
 #endif // NOSTOIKKUNA_H

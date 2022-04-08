@@ -3,6 +3,10 @@
 
 #include "kayttoliittyma.h"
 
+#include <QtNetwork>
+#include <QNetworkAccessManager>
+#include <QJsonDocument>
+
 #include <QDialog>
 #include <QDebug>
 #include <QTimer>
@@ -19,15 +23,17 @@ class pinInterface : public QDialog
 public:
     explicit pinInterface(QWidget *parent = nullptr);
     ~pinInterface();
+     QTimer *pinAjastin;
+
 
 private slots:
     void on_btn_pinKirjaudu_clicked();
-    void timeoutPinUi();
+
 
 private:
     Ui::pinInterface *ui;
     kayttoliittyma *objectkayttoliittyma;
-    QTimer *pinAjastin;
+    QString password = "pass";
 
 };
 

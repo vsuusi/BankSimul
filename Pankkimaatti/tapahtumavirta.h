@@ -3,6 +3,10 @@
 
 #include <QDialog>
 
+#include <QtNetwork>
+#include <QNetworkAccessManager>
+#include <QJsonDocument>
+
 namespace Ui {
 class tapahtumavirta;
 }

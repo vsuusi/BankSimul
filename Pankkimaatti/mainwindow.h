@@ -1,6 +1,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QtNetwork>
+#include <QNetworkAccessManager>
+#include <QJsonDocument>
+
 #include <QMainWindow>
 #include "pininterface.h"
 #include <QDebug>
@@ -16,6 +20,9 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+public slots:
+    void timeoutPinUi();
 
 private slots:
     void on_btn_syotakortti_clicked();
