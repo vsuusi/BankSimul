@@ -25,7 +25,11 @@ kayttoliittyma::~kayttoliittyma()
 
 void kayttoliittyma::on_btn_nostaRahaa_clicked()
 {
+    // objectnostoikkuna = new nostoikkuna;
     objectnostoikkuna->exec();
+    ui->label_tilinSaldo->setText(objectnostoikkuna->getSaldo());
+    // delete objectnostoikkuna;
+    //objectnostoikkuna = nullptr;
 }
 
 

@@ -25,6 +25,7 @@ public:
     ~pinInterface();
      QTimer *pinAjastin;
 public slots:
+     void timeoutPinUi();
 
 
 

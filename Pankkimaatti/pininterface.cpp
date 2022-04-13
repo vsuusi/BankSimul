@@ -16,11 +16,18 @@ pinInterface::~pinInterface()
 {
     delete ui;
     delete objectkayttoliittyma;
-    delete pinAjastin;
+    // delete pinAjastin;
 
-    pinAjastin = nullptr;
+    //pinAjastin = nullptr;
     ui = nullptr;
     objectkayttoliittyma = nullptr;
+}
+
+void pinInterface::timeoutPinUi()
+{
+    this->close();
+        qDebug() << "ajastin sulkee pin ui:n";
+
 }
 
 
@@ -35,7 +42,15 @@ void pinInterface::on_btn_pinKirjaudu_clicked()
 
     if (ui->lineEdit_pinSyotto->text() == password)
     {
-         objectkayttoliittyma->exec();
+        this->close();
+        qDebug() << "salasana oikein, pinUI suljettu ja timer tuhottu";
+        delete pinAjastin;
+        pinAjastin = nullptr;
+
+        objectkayttoliittyma->exec();
+
+
+
     }
 
     else

@@ -7,6 +7,7 @@
 #include <QNetworkAccessManager>
 #include <QJsonDocument>
 
+
 namespace Ui {
 
 class nostoikkuna;
@@ -21,6 +22,7 @@ public:
     ~nostoikkuna();
 
     int saldo = 50;
+    QString getSaldo();
 
 private slots:
     void on_btn_nosta20_clicked();
