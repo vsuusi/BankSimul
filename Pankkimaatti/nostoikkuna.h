@@ -1,14 +1,14 @@
 #ifndef NOSTOIKKUNA_H
 #define NOSTOIKKUNA_H
 
-#include <QDialog>
 
+#include <QDialog>
 #include <QtNetwork>
 #include <QNetworkAccessManager>
 #include <QJsonDocument>
 
-
 namespace Ui {
+
 class nostoikkuna;
 }
 
@@ -20,13 +20,12 @@ public:
     explicit nostoikkuna(QWidget *parent = nullptr);
     ~nostoikkuna();
 
+    int saldo = 50;
+
 private slots:
     void on_btn_nosta20_clicked();
-
     void on_btn_nosta40_clicked();
-
     void on_btn_nosta50_clicked();
-
     void on_btn_nosta100_clicked();
 
 
@@ -35,11 +34,12 @@ private slots:
 
     void on_btn_peruutaNosto_clicked();
 
+
 private:
     Ui::nostoikkuna *ui;
+
     int nostoSumma = 0;
-    int saldo = 50;
-    int uusiSaldo;
+
 };
 
 #endif // NOSTOIKKUNA_H

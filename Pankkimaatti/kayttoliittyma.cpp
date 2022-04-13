@@ -8,7 +8,7 @@ kayttoliittyma::kayttoliittyma(QWidget *parent) :
     ui->setupUi(this);
     objectnostoikkuna = new nostoikkuna;
     objecttapahtumavirta = new tapahtumavirta;
-
+    ui->label_tilinSaldo->setText(QString::number(objectnostoikkuna->saldo));
 }
 
 kayttoliittyma::~kayttoliittyma()
@@ -22,17 +22,16 @@ kayttoliittyma::~kayttoliittyma()
     objecttapahtumavirta = nullptr;
 }
 
+
 void kayttoliittyma::on_btn_nostaRahaa_clicked()
 {
     objectnostoikkuna->exec();
-
 }
 
 
 void kayttoliittyma::on_btn_tilitapahtumat_clicked()
 {
     objecttapahtumavirta->exec();
-
 }
 
 

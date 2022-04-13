@@ -24,16 +24,19 @@ public:
     explicit pinInterface(QWidget *parent = nullptr);
     ~pinInterface();
      QTimer *pinAjastin;
+public slots:
+
 
 
 private slots:
     void on_btn_pinKirjaudu_clicked();
 
 
+
 private:
     Ui::pinInterface *ui;
     kayttoliittyma *objectkayttoliittyma;
-    QString password = "pass";
+    QString password = "pass";              // SALASANA !!
 
 };
 

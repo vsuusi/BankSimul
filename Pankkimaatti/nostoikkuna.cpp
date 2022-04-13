@@ -13,6 +13,7 @@ nostoikkuna::~nostoikkuna()
     delete ui;
 }
 
+
 void nostoikkuna::on_btn_nosta20_clicked()
 {
     ui->lineEdit_nostetaanSummaX->setText("Nostetaanko 20€?");
@@ -57,10 +58,10 @@ void nostoikkuna::on_btn_vahvistaNosto_clicked()
     QString nostoSumma_str = QString::number(nostoSumma);
     QString saldo_str = QString::number(saldo);
     ui->lineEdit_nostetaanSummaX->setText("Nostetaan " + nostoSumma_str +
-                                                "€. Tilin saldo:" + saldo_str);
-
+                                                "€. Tilin saldo: " + saldo_str + "€");
     qDebug() << "Tilin saldo: " + saldo_str;
     }
+
 }
 
 
@@ -69,4 +70,5 @@ void nostoikkuna::on_btn_peruutaNosto_clicked()
     ui->lineEdit_nostetaanSummaX->clear();
     this->close();
 }
+
 

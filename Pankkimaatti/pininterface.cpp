@@ -26,12 +26,23 @@ pinInterface::~pinInterface()
 
 void pinInterface::on_btn_pinKirjaudu_clicked()
 {
-    pinAjastin->stop();
+    // pinAjastin->stop();
     pinAjastin->start(15000);
     qDebug() << "pin ajastin restartattu 15s";
 
     // tarkista tietokannasta onko salasana oikein, jos on:
-    objectkayttoliittyma->exec();
+    // tässä hardkoodattu password = pass
+
+    if (ui->lineEdit_pinSyotto->text() == password)
+    {
+         objectkayttoliittyma->exec();
+    }
+
+    else
+    {
+        ui->label_wrongPass->setText("Salasana väärin!");
+    }
+    ui->lineEdit_pinSyotto->clear();
 }
 
 

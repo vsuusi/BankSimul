@@ -25,6 +25,11 @@ public:
     explicit kayttoliittyma(QWidget *parent = nullptr);
     ~kayttoliittyma();
 
+public slots:
+    // void updateSaldoSlot();
+
+
+
 private slots:
     void on_btn_nostaRahaa_clicked();
 

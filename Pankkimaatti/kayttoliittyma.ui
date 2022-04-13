@@ -36,7 +36,7 @@
     <rect>
      <x>10</x>
      <y>30</y>
-     <width>191</width>
+     <width>221</width>
      <height>41</height>
     </rect>
    </property>
@@ -85,7 +85,7 @@
     <rect>
      <x>10</x>
      <y>90</y>
-     <width>81</width>
+     <width>101</width>
      <height>78</height>
     </rect>
    </property>
@@ -101,9 +101,9 @@
   <widget class="QLabel" name="label_tilinSaldo">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>110</x>
      <y>90</y>
-     <width>158</width>
+     <width>61</width>
      <height>78</height>
     </rect>
    </property>
