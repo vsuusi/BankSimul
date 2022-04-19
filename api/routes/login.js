@@ -2,32 +2,36 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const login = require('../models/login_model');
+const jwt = require('jsonwebtoken');
+const dotenv = require('dotenv');
 
 router.post('/', 
   function(request, response) {
-    if(request.body.username && request.body.password){
-      const username = request.body.username;
-      const password = request.body.password;
-        login.checkPassword(username, function(dbError, dbResult) {
+    if(request.body.korttinumero && request.body.pin){
+      const korttinumero = request.body.korttinumero;
+      const pin = request.body.pin; 
+
+        login.checkPassword(korttinumero, function(dbError, dbResult) {
           if(dbError){
             response.json(dbError);
           }
           else{
             if (dbResult.length > 0) {
-              bcrypt.compare(password,dbResult[0].password, function(err,compareResult) {
+              bcrypt.compare(pin,dbResult[0].pin, function(err,compareResult) {
                 if(compareResult) {
                   console.log("succes");
-                  response.send(true);
+                  const token = generateAccessToken({ korttinumero: korttinumero });
+                  response.send(token);
                 }
                 else {
-                    console.log("wrong password");
+                    console.log("wrong PIN");
                     response.send(false);
                 }
               }
               );
             }
             else{
-              console.log("user does not exists");
+              console.log("korttinumero does not exists");
               response.send(false);
             }
           }
@@ -35,10 +39,15 @@ router.post('/',
         );
       }
     else{
-      console.log("username or password missing");
+      console.log("korttinumero or PIN missing");
       response.send(false);
     }
   }
 );
+
+function generateAccessToken(korttinumero) {
+  dotenv.config();
+  return jwt.sign(korttinumero, process.env.MY_TOKEN, { expiresIn: '1800s' });
+}
 
 module.exports=router;
