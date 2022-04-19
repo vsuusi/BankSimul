@@ -35,6 +35,7 @@ private slots:
 
 
 private:
+    void clearWrongPasswordLabel();
     Ui::pinInterface *ui;
     kayttoliittyma *objectkayttoliittyma;
     QString password = "pass";              // SALASANA !!

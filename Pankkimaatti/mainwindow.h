@@ -22,7 +22,7 @@ public:
     ~MainWindow();
 
 public slots:
-    // void timeoutPinUi();
+
 
 private slots:
     void on_btn_syotakortti_clicked();

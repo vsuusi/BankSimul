@@ -16,9 +16,9 @@ pinInterface::~pinInterface()
 {
     delete ui;
     delete objectkayttoliittyma;
-    // delete pinAjastin;
+    delete pinAjastin;
 
-    //pinAjastin = nullptr;
+    pinAjastin = nullptr;
     ui = nullptr;
     objectkayttoliittyma = nullptr;
 }
@@ -43,14 +43,10 @@ void pinInterface::on_btn_pinKirjaudu_clicked()
     if (ui->lineEdit_pinSyotto->text() == password)
     {
         this->close();
-        qDebug() << "salasana oikein, pinUI suljettu ja timer tuhottu";
-        delete pinAjastin;
-        pinAjastin = nullptr;
-
+        pinAjastin->stop();
+        qDebug() << "pin ui suljettu";
+        clearWrongPasswordLabel();
         objectkayttoliittyma->exec();
-
-
-
     }
 
     else
@@ -58,6 +54,12 @@ void pinInterface::on_btn_pinKirjaudu_clicked()
         ui->label_wrongPass->setText("Salasana väärin!");
     }
     ui->lineEdit_pinSyotto->clear();
+}
+
+void pinInterface::clearWrongPasswordLabel()
+{
+
+    ui->label_wrongPass->clear(); // :D
 }
 
 

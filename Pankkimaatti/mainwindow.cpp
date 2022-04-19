@@ -19,13 +19,6 @@ MainWindow::~MainWindow()
     objectpinInterface = nullptr;
 }
 
-//void MainWindow::timeoutPinUi()
-//{
-//    objectpinInterface->close();
-//        qDebug() << "ajastin sulkee pin ui:n";
-
-//}
-
 
 void MainWindow::on_btn_syotakortti_clicked()
 {
@@ -36,7 +29,10 @@ void MainWindow::on_btn_syotakortti_clicked()
     objectpinInterface->pinAjastin->start(15000);
         qDebug() << "pin ajastin käyntiin 15 sec";
 
+
     objectpinInterface->exec();
+
+
 
 
 }
