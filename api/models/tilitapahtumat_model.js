@@ -7,7 +7,7 @@ const tilitapahtumat = {
   getAll: function(callback) {
     return db.query('select * from tilitapahtumat', callback);
   },
- add: function(tilitapahtumat, callback) {
+  add: function(tilitapahtumat, callback) {
     return db.query(
       'insert into tilitapahtumat (idtilitapahtumat,paivays,tapahtuma,summa,idtili,idkortti) values(?,?,?,?,?,?)',
       [tilitapahtumat.idtilitapahtumat, tilitapahtumat.paivays, tilitapahtumat.tapahtuma, tilitapahtumat.summa, tilitapahtumat.idtili, tilitapahtumat.idkortti],
