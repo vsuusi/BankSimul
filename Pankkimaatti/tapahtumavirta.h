@@ -22,6 +22,10 @@ public:
 private slots:
     void on_btn_tilitapahtumatPaluu_clicked();
 
+    void on_btn_edellisetTapahtumat_clicked();
+
+    void on_btn_seuraavatTapahtumat_clicked();
+
 private:
     Ui::tapahtumavirta *ui;
 };
