@@ -20,6 +20,8 @@ private:
     QNetworkAccessManager *dbManager;
     QNetworkReply *reply;
 
+    asiakas *pAsiakas;
+
 signals:
     void sendAsiakasToMain(QString);
 

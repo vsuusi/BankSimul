@@ -33,12 +33,12 @@ void tili_asiakas::recvTili_AsiakasFromDB(QNetworkReply *reply)
     QByteArray response_data=reply->readAll();
     QJsonDocument json_doc = QJsonDocument::fromJson(response_data);
     QJsonObject json_obj = json_doc.object();
-    QString data;
-    data=QString::number(json_obj["id_tili"].toInt())+","+json_obj["id_asiakas"].toInt();
+    QString RaTili_Asiakas;
+    RaTili_Asiakas=QString::number(json_obj["id_tili"].toInt())+","+json_obj["id_asiakas"].toInt();
 
-    qDebug()<<data;
+    qDebug()<<RaTili_Asiakas;
 
-    emit sendTili_AsiakasToMain(data);
+    emit sendTili_AsiakasToMain(RaTili_Asiakas);
 
     reply->deleteLater();
     dbManager->deleteLater();
