@@ -16,15 +16,21 @@ public:
     ~Tili();
     void getTiliDB();
 
+    const QString &getRaTili() const;
+
 private:
     QNetworkAccessManager *dbManager;
+    QNetworkAccessManager *putManager;
     QNetworkReply *reply;
+    QByteArray response_data;
+    QString RaTili;
 
 signals:
     void sendTiliToMain(QString);
 
 public slots:
     void recvTiliFromDB(QNetworkReply *reply);
+    //void updateSaldoFromDB(QNetworkReply *reply, QString);
 };
 
 #endif // TILI_H

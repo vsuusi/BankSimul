@@ -33,14 +33,14 @@ void kortti::recvKorttiFromDB(QNetworkReply *reply)
     QByteArray response_data=reply->readAll();
     QJsonDocument json_doc = QJsonDocument::fromJson(response_data);
     QJsonObject json_obj = json_doc.object();
-    QString data;
-    data=QString::number(json_obj["id_kortti"].toInt())+","+json_obj["korttinumero"].toInt()
+    QString RaKortti;
+    RaKortti=QString::number(json_obj["id_kortti"].toInt())+","+json_obj["korttinumero"].toInt()
             +","+json_obj["pin"].toInt()+","+json_obj["id_asiakas"].toInt()
             +","+json_obj["id_tili"].toInt();
 
-    qDebug()<<data;
+    qDebug()<<RaKortti;
 
-    emit sendKorttiToMain(data);
+    emit sendKorttiToMain(RaKortti);
 
     reply->deleteLater();
     dbManager->deleteLater();

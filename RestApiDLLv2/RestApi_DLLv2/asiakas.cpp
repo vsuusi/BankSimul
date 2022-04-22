@@ -3,6 +3,8 @@
 asiakas::asiakas(QObject *parent) : QObject(parent)
 {
     qDebug()<<"At DLL asiakas constructor";
+    pAsiakas = new asiakas(this);
+    connect(pAsiakas, SIGNAL(sendAsiakasToMain()),this,SLOT(recvAsiakas()));
 }
 
 asiakas::~asiakas()
@@ -33,13 +35,13 @@ void asiakas::recvAsiakasFromDB(QNetworkReply *reply)
     QByteArray response_data=reply->readAll();
     QJsonDocument json_doc = QJsonDocument::fromJson(response_data);
     QJsonObject json_obj = json_doc.object();
-    QString data;
-    data=QString::number(json_obj["id_asiakas"].toInt())+","+json_obj["nimi"].toString()
+    QString RaAsiakas;
+    RaAsiakas=QString::number(json_obj["id_asiakas"].toInt())+","+json_obj["nimi"].toString()
             +","+json_obj["lahiosoite"].toString()+","+json_obj["puhelinnumero"].toInt();
 
-    qDebug()<<data;
+    qDebug()<<RaAsiakas;
 
-    emit sendAsiakasToMain(data);
+    emit sendAsiakasToMain(RaAsiakas);
 
     reply->deleteLater();
     dbManager->deleteLater();
