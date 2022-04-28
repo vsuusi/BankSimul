@@ -1,0 +1,14 @@
+debug/asiakas.o
+debug/kortti.o
+debug/login.o
+debug/restapi_dllv2.o
+debug/tili.o
+debug/tili_asiakas.o
+debug/tilitapahtumat.o
+debug/moc_asiakas.o
+debug/moc_kortti.o
+debug/moc_login.o
+debug/moc_restapi_dllv2.o
+debug/moc_tili.o
+debug/moc_tili_asiakas.o
+debug/moc_tilitapahtumat.o

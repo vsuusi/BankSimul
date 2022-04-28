@@ -7,8 +7,16 @@ pinInterface::pinInterface(QWidget *parent) :
     ui(new Ui::pinInterface)
 {
     ui->setupUi(this);
-    objectkayttoliittyma = new kayttoliittyma;
+    // objectkayttoliittyma = new kayttoliittyma;
     pinAjastin = new QTimer(this);
+
+    objLukija = new Lukija_Dll(this);
+        connect(objLukija,SIGNAL(sendValueToExe(QString)),
+                this,SLOT(reciveRFID(QString)));
+
+    objPinApi = new ApiDLL(this);
+        connect(objPinApi, SIGNAL(sendTokenToExe(QByteArray)),
+                this, SLOT(reciveToken(QByteArray)));
 
 }
 
@@ -29,19 +37,42 @@ void pinInterface::timeoutPinUi()
         qDebug() << "ajastin sulkee pin ui:n";
 
 }
+void pinInterface::reciveRFID(QString response)
+{
+    korttinumero = response;
+
+    if(korttinumero == "0500"){
+        asiakasId = 1;
+    }
+    if(korttinumero == "0600"){
+        asiakasId = 2;
+        }
+}
+
+
+
+void pinInterface::reciveToken(QByteArray token)
+{
+    EXEtoken = token;
+//    qDebug() << EXEtoken;
+    emit QuitEventLoop();
+}
 
 
 void pinInterface::on_btn_pinKirjaudu_clicked()
 {
-    // pinAjastin->stop();
-    pinAjastin->start(15000);
-    qDebug() << "pin ajastin restartattu 15s";
+    pin = ui->lineEdit_pinSyotto->text();
+    objPinApi->Login(pin, korttinumero);
+    QEventLoop loop;
 
-    // tarkista tietokannasta onko salasana oikein, jos on:
-    // tässä hardkoodattu password = pass
+    connect(this, &pinInterface::QuitEventLoop, &loop, &QEventLoop::quit);
+    loop.exec();
+    qDebug() << "Exetoken eventloopin jalkeen: " + EXEtoken;
 
-    if (ui->lineEdit_pinSyotto->text() == password)
+
+    if (EXEtoken != "Bearer false")
     {
+        objectkayttoliittyma = new kayttoliittyma;
         this->close();
         pinAjastin->stop();
         qDebug() << "pin ui suljettu";
@@ -51,15 +82,18 @@ void pinInterface::on_btn_pinKirjaudu_clicked()
 
     else
     {
-        ui->label_wrongPass->setText("Salasana väärin!");
+       ui->label_wrongPass->setText("Salasana väärin!");
+       pinAjastin->stop();
+       pinAjastin->start(15000);
+       qDebug() << "pin ajastin restart";
     }
+
     ui->lineEdit_pinSyotto->clear();
 }
 
 void pinInterface::clearWrongPasswordLabel()
 {
 
-    ui->label_wrongPass->clear(); // :D
+    ui->label_wrongPass->clear();
 }
-
 

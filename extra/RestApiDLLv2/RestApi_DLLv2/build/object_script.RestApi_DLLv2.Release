@@ -1,0 +1,14 @@
+release/asiakas.o
+release/kortti.o
+release/login.o
+release/restapi_dllv2.o
+release/tili.o
+release/tili_asiakas.o
+release/tilitapahtumat.o
+release/moc_asiakas.o
+release/moc_kortti.o
+release/moc_login.o
+release/moc_restapi_dllv2.o
+release/moc_tili.o
+release/moc_tili_asiakas.o
+release/moc_tilitapahtumat.o

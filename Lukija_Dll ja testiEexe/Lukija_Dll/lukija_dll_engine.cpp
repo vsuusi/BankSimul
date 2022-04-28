@@ -5,7 +5,7 @@ QSerialPort *serial;
 Lukija_Dll_Engine::Lukija_Dll_Engine(QObject *parent) : QObject(parent)
 {
     serial = new QSerialPort(this);
-    serial->setPortName("com3");
+    serial->setPortName("com4");
     serial->setBaudRate(QSerialPort::Baud9600);
     serial->setDataBits(QSerialPort::Data8);
     serial->setParity(QSerialPort::NoParity);
@@ -30,7 +30,7 @@ void Lukija_Dll_Engine::recvResponse()
     QByteArray ba = serial->readAll();
 
     ba = ba.simplified();
-    ba = ba.mid(1,10);
+    ba = ba.mid(1,4);
     qDebug() <<ba;
     QString response = QString::fromUtf8(ba);
     emit returnValueToLukija_Dll(response);
