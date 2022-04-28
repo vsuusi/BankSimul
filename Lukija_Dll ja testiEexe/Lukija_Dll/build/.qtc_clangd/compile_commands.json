@@ -9,7 +9,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jukka\\AppData\\Local\\Temp\\QtCreator-aLYOpw\\clang-uiheader-ONlSNB",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-gFbJlU\\clang-uiheader-kicVTQ",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -32,7 +32,7 @@
         "-DQT_SERIALPORT_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -40,9 +40,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\build\\debug",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -66,10 +66,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\lukija_dll.cpp"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\lukija_dll.cpp"
     ],
-    "directory": "C:/Users/jukka/Documents/Lukija_Dll/build/.qtc_clangd",
-    "file": "C:/Users/jukka/Documents/Lukija_Dll/lukija_dll.cpp"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/Lukija_Dll ja testiEexe/Lukija_Dll/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/Lukija_Dll ja testiEexe/Lukija_Dll/lukija_dll.cpp"
 },
 {
     "arguments": [
@@ -81,7 +81,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jukka\\AppData\\Local\\Temp\\QtCreator-aLYOpw\\clang-uiheader-ONlSNB",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-gFbJlU\\clang-uiheader-kicVTQ",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -104,7 +104,7 @@
         "-DQT_SERIALPORT_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -112,9 +112,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\build\\debug",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -138,10 +138,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\lukija_dll_engine.cpp"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\lukija_dll_engine.cpp"
     ],
-    "directory": "C:/Users/jukka/Documents/Lukija_Dll/build/.qtc_clangd",
-    "file": "C:/Users/jukka/Documents/Lukija_Dll/lukija_dll_engine.cpp"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/Lukija_Dll ja testiEexe/Lukija_Dll/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/Lukija_Dll ja testiEexe/Lukija_Dll/lukija_dll_engine.cpp"
 },
 {
     "arguments": [
@@ -153,7 +153,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jukka\\AppData\\Local\\Temp\\QtCreator-aLYOpw\\clang-uiheader-ONlSNB",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-gFbJlU\\clang-uiheader-kicVTQ",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -176,7 +176,7 @@
         "-DQT_SERIALPORT_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -184,9 +184,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\build\\debug",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -210,10 +210,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\Lukija_Dll_global.h"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\Lukija_Dll_global.h"
     ],
-    "directory": "C:/Users/jukka/Documents/Lukija_Dll/build/.qtc_clangd",
-    "file": "C:/Users/jukka/Documents/Lukija_Dll/Lukija_Dll_global.h"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/Lukija_Dll ja testiEexe/Lukija_Dll/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/Lukija_Dll ja testiEexe/Lukija_Dll/Lukija_Dll_global.h"
 },
 {
     "arguments": [
@@ -225,7 +225,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jukka\\AppData\\Local\\Temp\\QtCreator-aLYOpw\\clang-uiheader-ONlSNB",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-gFbJlU\\clang-uiheader-kicVTQ",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -248,7 +248,7 @@
         "-DQT_SERIALPORT_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -256,9 +256,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\build\\debug",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -282,10 +282,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\lukija_dll.h"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\lukija_dll.h"
     ],
-    "directory": "C:/Users/jukka/Documents/Lukija_Dll/build/.qtc_clangd",
-    "file": "C:/Users/jukka/Documents/Lukija_Dll/lukija_dll.h"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/Lukija_Dll ja testiEexe/Lukija_Dll/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/Lukija_Dll ja testiEexe/Lukija_Dll/lukija_dll.h"
 },
 {
     "arguments": [
@@ -297,7 +297,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\jukka\\AppData\\Local\\Temp\\QtCreator-aLYOpw\\clang-uiheader-ONlSNB",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-gFbJlU\\clang-uiheader-kicVTQ",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -320,7 +320,7 @@
         "-DQT_SERIALPORT_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -328,9 +328,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\build\\debug",
         "-I",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -354,9 +354,9 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\jukka\\Documents\\Lukija_Dll\\lukija_dll_engine.h"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\Lukija_Dll ja testiEexe\\Lukija_Dll\\lukija_dll_engine.h"
     ],
-    "directory": "C:/Users/jukka/Documents/Lukija_Dll/build/.qtc_clangd",
-    "file": "C:/Users/jukka/Documents/Lukija_Dll/lukija_dll_engine.h"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/Lukija_Dll ja testiEexe/Lukija_Dll/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/Lukija_Dll ja testiEexe/Lukija_Dll/lukija_dll_engine.h"
 }
 ]

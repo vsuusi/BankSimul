@@ -3,6 +3,7 @@
 
 #include "nostoikkuna.h"
 #include "tapahtumavirta.h"
+#include "apidll.h"
 
 #include <QtNetwork>
 #include <QNetworkAccessManager>
@@ -25,12 +26,16 @@ public:
     explicit kayttoliittyma(QWidget *parent = nullptr);
     ~kayttoliittyma();
 
+    QString nykyinenAsiakas;
+    QByteArray kayttisToken;
+
 public slots:
-    // void updateSaldoSlot();
 
 
 
 private slots:
+
+
     void on_btn_nostaRahaa_clicked();
 
     void on_btn_tilitapahtumat_clicked();
@@ -43,6 +48,8 @@ private:
     Ui::kayttoliittyma *ui;
     nostoikkuna *objectnostoikkuna;
     tapahtumavirta *objecttapahtumavirta;
+    ApiDLL *objKayttoApi;
+
 
 
 };

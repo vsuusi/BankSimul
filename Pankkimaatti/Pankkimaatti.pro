@@ -1,5 +1,6 @@
 QT       += core gui
 QT +=network
+QT +=serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -35,3 +36,21 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+
+win32: LIBS += -L$$PWD/'../Lukija_Dll ja testiEexe/Lukija_Dll/build/debug/' -lLukija_Dll
+
+INCLUDEPATH += $$PWD/'../Lukija_Dll ja testiEexe/Lukija_Dll'
+DEPENDPATH += $$PWD/'../Lukija_Dll ja testiEexe/Lukija_Dll'
+
+#santeri versio
+win32: LIBS += -L$$PWD/../ApiDLL/build/debug/ -lApiDLL
+
+INCLUDEPATH += $$PWD/../ApiDLL
+DEPENDPATH += $$PWD/../ApiDLL
+
+#janneversio
+#win32: LIBS += -L$$PWD/'../apidll versiot/ApiDLLv6/ApiDLL/build/debug/' -lApiDLL
+
+#INCLUDEPATH += $$PWD/'../apidll versiot/ApiDLLv6/ApiDLL'
+#DEPENDPATH += $$PWD/'../apidll versiot/ApiDLLv6/ApiDLL'

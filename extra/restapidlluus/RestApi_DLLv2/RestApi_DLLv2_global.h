@@ -1,0 +1,12 @@
+#ifndef RESTAPI_DLLV2_GLOBAL_H
+#define RESTAPI_DLLV2_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(RESTAPI_DLLV2_LIBRARY)
+#  define RESTAPI_DLLV2_EXPORT Q_DECL_EXPORT
+#else
+#  define RESTAPI_DLLV2_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // RESTAPI_DLLV2_GLOBAL_H
