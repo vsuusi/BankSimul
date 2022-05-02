@@ -4,30 +4,15 @@
 ApiDLL::ApiDLL(QObject *parent) : QObject(parent)
 {
     qDebug()<<"RESTAPI DLL constructor";
-    pTili = new Tili(this);
-//    connect(pTili, SIGNAL(sendTiliToMain(QString)),this,SLOT(recvTili(QString)));
-
     pTili_Asiakas = new tili_asiakas(this);
-//    connect(pTili_Asiakas, SIGNAL(sendTiliToMain(QString)),this,SLOT(recvTili_Asiakas(QString)));
-
     pAsiakas = new asiakas(this);
-//    connect(pAsiakas, SIGNAL(sendTiliToMain(QString)),this,SLOT(recvAsiakas(QString)));
-
     pKortti = new kortti(this);
-//    connect(pKortti, SIGNAL(sendTiliToMain(QString)),this,SLOT(recvKortti(QString)));
-
     pTilitapahtumat = new tilitapahtumat(this);
-//    connect(pTilitapahtumat, SIGNAL(sendTiliToMain(QString)),this,SLOT(recvTilitapahtumat(QString)));
-
-
 }
 
 ApiDLL::~ApiDLL()
 {
-
     qDebug()<<"RESTAPI DLL destructor";
-    delete pTili;
-    pTili = nullptr;
     delete pTili_Asiakas;
     pTili_Asiakas = nullptr;
     delete pAsiakas;
@@ -36,16 +21,10 @@ ApiDLL::~ApiDLL()
     pKortti = nullptr;
     delete pTilitapahtumat;
     pTilitapahtumat = nullptr;
-//    delete pLogin;
-//    pLogin = nullptr;
-
 }
 
 void ApiDLL::Login(QString pin, QString korttinumero)
 {
-    // pLogin = new login(pin, korttinumero);
-//    qDebug() << "pin = " + pin;
-//    qDebug() << "korttinumero " + korttinumero;
     QJsonObject jsonObj;
     jsonObj.insert("korttinumero", korttinumero);
     jsonObj.insert("pin", pin);
@@ -60,6 +39,8 @@ void ApiDLL::Login(QString pin, QString korttinumero)
     reply = dbManager->post(request, QJsonDocument(jsonObj).toJson());
 }
 
+
+
 const QByteArray &ApiDLL::getToken() const
 {
     return token;
@@ -69,47 +50,77 @@ void ApiDLL::recvLoginSlot(QNetworkReply *reply)
 {
     response_data=reply->readAll();
     token = "Bearer " + response_data;
-    // token = response_data;
-   //  emit QuitEventLoop();
     emit sendTokenToExe(token);
 }
 
 
-
-
-
-
-void ApiDLL::recvTili(QString RaTili)
+void ApiDLL::Asiakas(QByteArray kayttisToken, int asiakasId)
 {
-    qDebug()<<"At DLL SLOT function = recvTili";
-    QString tili = pTili->getRaTili();
-    qDebug()<<"tili="+tili;
-    emit sendToExe(RaTili);
+    QString id = QString::number(asiakasId);
+    QString site_url="http://localhost:3000/asiakas/"+id;
+    QNetworkRequest request((site_url));
+    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+    request.setRawHeader(QByteArray("Authorization"),(kayttisToken));
+    asiakasManager = new QNetworkAccessManager(this);
+    connect(asiakasManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(recvAsiakasSlot(QNetworkReply*)));
+    asiakasreply = asiakasManager->get(request);
 }
 
-void ApiDLL::recvTili_Asiakas(QString RaTili_Asiakas)
+
+void ApiDLL::recvAsiakasSlot(QNetworkReply *asiakasreply)
 {
-    qDebug()<<"At DLL SLOT function = recvTili_Asiakas";
-    emit sendToExe(RaTili_Asiakas);
+    QByteArray asiakasresponse_data=asiakasreply->readAll();
+    QJsonDocument json_doc = QJsonDocument::fromJson(asiakasresponse_data);
+    QJsonArray json_array = json_doc.array();
+    QString RaAsiakas;
+    foreach(const QJsonValue &value, json_array)
+    {
+    QJsonObject json_obj = value.toObject();
+    RaAsiakas=QString::number(json_obj["idasiakas"].toInt())+","+json_obj["nimi"].toString()+
+            ","+json_obj["lahiosoite"].toString()+","+json_obj["puhelinnumero"].toString();
+    }
+
+    emit sendAsiakasToExe(RaAsiakas);
+
+    asiakasreply->deleteLater();
+    asiakasManager->deleteLater();
 }
 
-void ApiDLL::recvAsiakas(QString RaAsiakas)
+
+void ApiDLL::Tili(QByteArray kayttisToken, int tiliId)
 {
-    qDebug()<<"At DLL SLOT function = recvAsiakas";
-    emit sendToExe(RaAsiakas);
+    QString id = QString::number(tiliId);
+    QString site_url="http://localhost:3000/tili/"+id;
+    QNetworkRequest request((site_url));
+    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+    request.setRawHeader(QByteArray("Authorization"),(kayttisToken));
+    tiliManager = new QNetworkAccessManager(this);
+    connect(tiliManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(recvTiliSlot(QNetworkReply*)));
+    tilireply = tiliManager->get(request);
 }
 
-void ApiDLL::recvKortti(QString RaKortti)
+void ApiDLL::recvTiliSlot(QNetworkReply *tilireply)
 {
-    qDebug()<<"At DLL SLOT function = recvKortti";
-    emit sendToExe(RaKortti);
+    QByteArray tiliresponse_data=tilireply->readAll();
+    QJsonDocument json_doc = QJsonDocument::fromJson(tiliresponse_data);
+    QJsonObject json_obj = json_doc.object();
+    QString tili_dataId;
+    QString tili_dataNumero;
+    QString tili_dataSaldo;
+
+    tili_dataId = QString::number(json_obj["idtili"].toInt())+",";
+    tili_dataNumero = json_obj["tilinumero"].toString()+",";
+    tili_dataSaldo = QString::number(json_obj["saldo"].toDouble());
+
+    emit sendTiliToExe(tili_dataId, tili_dataNumero, tili_dataSaldo);
+
+    tilireply->deleteLater();
+    tiliManager->deleteLater();
 }
 
-void ApiDLL::recvTilitapahtumat(QString RaTilitapahtumat)
-{
-    qDebug()<<"At DLL SLOT function = recvTilitapahtumat";
-    emit sendToExe(RaTilitapahtumat);
-}
+
+
+
 
 
 

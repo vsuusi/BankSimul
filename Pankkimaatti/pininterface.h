@@ -38,6 +38,7 @@ private slots:
     void on_btn_pinKirjaudu_clicked();
     void reciveRFID(QString response);
     void reciveToken(QByteArray token);
+
 signals:
     void QuitEventLoop();
 

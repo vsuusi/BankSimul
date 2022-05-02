@@ -8,7 +8,6 @@
 #include <QNetworkAccessManager>
 #include <QJsonDocument>
 
-#include "tili.h"
 #include "tili_asiakas.h"
 #include "kortti.h"
 #include "asiakas.h"
@@ -22,10 +21,16 @@ public:
     ApiDLL(QObject *parent);
     ~ApiDLL();
     void Login(QString pin, QString korttinumero);
+    void Asiakas(QByteArray kayttisToken, int asiakasId);
+    void Tili(QByteArray kayttisToken, int korttiId);
+
+
     QByteArray getTokenFromApi();
     QByteArray token;
 
     const QByteArray &getToken() const;
+
+    int asiakasId;
 
 private:
     QNetworkAccessManager *dbManager;
@@ -35,8 +40,14 @@ private:
     QString pin;
     QString korttinumero;
 
+    QNetworkAccessManager *asiakasManager;
+    QNetworkReply *asiakasreply;
+    QByteArray asiakasresponse_data;
 
-    Tili * pTili;
+    QNetworkAccessManager *tiliManager;
+    QNetworkReply *tilireply;
+    QByteArray tiliresponse_data;
+
     tili_asiakas * pTili_Asiakas;
     asiakas * pAsiakas;
     kortti * pKortti;
@@ -46,17 +57,18 @@ private:
 
 signals:
     void sendToExe(QString);
+
     void sendTokenToExe(QByteArray);
+    void sendAsiakasToExe(QString);
+    void sendTiliToExe(QString, QString, QString);
+
     void QuitEventLoop();
 
 public slots:
-    void recvTili(QString);
-    void recvTili_Asiakas(QString);
-    void recvAsiakas(QString);
-    void recvKortti(QString);
-    void recvTilitapahtumat(QString);
 
+    void recvTiliSlot(QNetworkReply *reply);
     void recvLoginSlot(QNetworkReply *reply);
+    void recvAsiakasSlot(QNetworkReply *reply);
 
 };
 
