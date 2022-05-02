@@ -34,19 +34,13 @@ pinInterface::~pinInterface()
 void pinInterface::timeoutPinUi()
 {
     this->close();
+    ui->lineEdit_pinSyotto->clear();
         qDebug() << "ajastin sulkee pin ui:n";
 
 }
 void pinInterface::reciveRFID(QString response)
 {
     korttinumero = response;
-
-    if(korttinumero == "0500"){
-        asiakasId = 1;
-    }
-    if(korttinumero == "0600"){
-        asiakasId = 2;
-        }
 }
 
 
@@ -54,7 +48,6 @@ void pinInterface::reciveRFID(QString response)
 void pinInterface::reciveToken(QByteArray token)
 {
     EXEtoken = token;
-//    qDebug() << EXEtoken;
     emit QuitEventLoop();
 }
 
@@ -62,9 +55,17 @@ void pinInterface::reciveToken(QByteArray token)
 void pinInterface::on_btn_pinKirjaudu_clicked()
 {
     pin = ui->lineEdit_pinSyotto->text();
+    korttinumero = ui->lineEdit_korttinumero->text();
     objPinApi->Login(pin, korttinumero);
-    QEventLoop loop;
 
+    if(korttinumero == "0500"){
+        asiakasId = 1;
+    }
+    if(korttinumero == "0600"){
+        asiakasId = 2;
+        }
+
+    QEventLoop loop;
     connect(this, &pinInterface::QuitEventLoop, &loop, &QEventLoop::quit);
     loop.exec();
     qDebug() << "Exetoken eventloopin jalkeen: " + EXEtoken;
@@ -72,7 +73,7 @@ void pinInterface::on_btn_pinKirjaudu_clicked()
 
     if (EXEtoken != "Bearer false")
     {
-        objectkayttoliittyma = new kayttoliittyma;
+        objectkayttoliittyma = new kayttoliittyma(EXEtoken, asiakasId);
         this->close();
         pinAjastin->stop();
         qDebug() << "pin ui suljettu";

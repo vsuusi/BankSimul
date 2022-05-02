@@ -7,9 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     objectpinInterface = new pinInterface;
-//    objLukija = new Lukija_Dll(this);
-        connect(objectpinInterface->objLukija,SIGNAL(sendValueToExe(QString)),
-                this,SLOT(reciveRFID(QString)));
+    connect(objectpinInterface->objLukija,SIGNAL(sendValueToExe(QString)),
+            this,SLOT(reciveRFID(QString)));
 
 }
 
@@ -25,7 +24,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btn_syotakortti_clicked()
 {
-
     connect(objectpinInterface->pinAjastin, SIGNAL(timeout()),
             objectpinInterface, SLOT(timeoutPinUi()));
     objectpinInterface->pinAjastin->setSingleShot(true);
@@ -40,8 +38,6 @@ void MainWindow::on_btn_syotakortti_clicked()
 
 void MainWindow::reciveRFID(QString response)
 {
-    // if (response == "06000DE56B") {|| "0500CCA4A1")
-
 
     qDebug() << response;
     connect(objectpinInterface->pinAjastin, SIGNAL(timeout()),
