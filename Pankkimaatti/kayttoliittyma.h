@@ -43,6 +43,9 @@ private slots:
 
     void updateSaldoSlot(double saldo);
 
+    void timeoutKayttisSlot();
+    void StartKayttisSlot();
+
 signals:
     void QuitEventLoopTili();
 private:
@@ -50,6 +53,7 @@ private:
     nostoikkuna *objectnostoikkuna;
     tapahtumavirta *objecttapahtumavirta;
     ApiDLL *objKayttoApi;
+    QTimer *kayttisTimer;
 
 };
 

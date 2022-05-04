@@ -19,6 +19,8 @@ class tapahtumavirta : public QDialog
 public:
     explicit tapahtumavirta(QByteArray kayttisToken, int NostoTiliId, QWidget *parent = nullptr);
     ~tapahtumavirta();
+signals:
+    void StartKayttisTimerSignal();
 
 private slots:
     void reciveTilitapahtumat(QString tilitapahtumat_data);

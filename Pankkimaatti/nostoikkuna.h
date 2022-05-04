@@ -24,6 +24,7 @@ public:
 
 signals:
     void updateSaldoSignal(double saldo);
+    void StartKayttisTimerSignal();
 
 private slots:    
     //void reciveTili(QString tili_dataId, QString tili_dataNumero, QString tili_dataSaldo);

@@ -56,7 +56,6 @@ void pinInterface::reciveToken(QByteArray token)
     emit QuitEventLoop();
 }
 
-
 void pinInterface::on_btn_pinKirjaudu_clicked()
 {
     pin = ui->lineEdit_pinSyotto->text();
