@@ -9,7 +9,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -32,7 +32,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -40,9 +40,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -66,10 +66,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\apidll.cpp"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\apidll.cpp"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/apidll.cpp"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/apidll.cpp"
 },
 {
     "arguments": [
@@ -81,7 +81,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -104,7 +104,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -112,9 +112,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -138,10 +138,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\asiakas.cpp"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\asiakas.cpp"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/asiakas.cpp"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/asiakas.cpp"
 },
 {
     "arguments": [
@@ -153,7 +153,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -176,7 +176,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -184,9 +184,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -210,10 +210,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\kortti.cpp"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\kortti.cpp"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/kortti.cpp"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/kortti.cpp"
 },
 {
     "arguments": [
@@ -225,7 +225,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -248,7 +248,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -256,9 +256,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -282,10 +282,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\login.cpp"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\login.cpp"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/login.cpp"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/login.cpp"
 },
 {
     "arguments": [
@@ -297,7 +297,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -320,7 +320,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -328,9 +328,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -354,10 +354,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\tili.cpp"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\tili.cpp"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/tili.cpp"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/tili.cpp"
 },
 {
     "arguments": [
@@ -369,7 +369,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -392,7 +392,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -400,9 +400,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -426,10 +426,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\tili_asiakas.cpp"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\tili_asiakas.cpp"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/tili_asiakas.cpp"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/tili_asiakas.cpp"
 },
 {
     "arguments": [
@@ -441,7 +441,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -464,7 +464,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -472,9 +472,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -498,10 +498,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\tilitapahtumat.cpp"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\tilitapahtumat.cpp"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/tilitapahtumat.cpp"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/tilitapahtumat.cpp"
 },
 {
     "arguments": [
@@ -513,7 +513,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -536,7 +536,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -544,9 +544,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -570,10 +570,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\ApiDLL_global.h"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\ApiDLL_global.h"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/ApiDLL_global.h"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/ApiDLL_global.h"
 },
 {
     "arguments": [
@@ -585,7 +585,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -608,7 +608,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -616,9 +616,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -642,10 +642,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\apidll.h"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\apidll.h"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/apidll.h"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/apidll.h"
 },
 {
     "arguments": [
@@ -657,7 +657,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -680,7 +680,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -688,9 +688,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -714,10 +714,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\asiakas.h"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\asiakas.h"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/asiakas.h"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/asiakas.h"
 },
 {
     "arguments": [
@@ -729,7 +729,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -752,7 +752,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -760,9 +760,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -786,10 +786,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\kortti.h"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\kortti.h"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/kortti.h"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/kortti.h"
 },
 {
     "arguments": [
@@ -801,7 +801,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -824,7 +824,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -832,9 +832,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -858,10 +858,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\login.h"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\login.h"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/login.h"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/login.h"
 },
 {
     "arguments": [
@@ -873,7 +873,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -896,7 +896,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -904,9 +904,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -930,10 +930,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\tili.h"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\tili.h"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/tili.h"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/tili.h"
 },
 {
     "arguments": [
@@ -945,7 +945,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -968,7 +968,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -976,9 +976,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -1002,10 +1002,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\tili_asiakas.h"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\tili_asiakas.h"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/tili_asiakas.h"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/tili_asiakas.h"
 },
 {
     "arguments": [
@@ -1017,7 +1017,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\janne\\AppData\\Local\\Temp\\QtCreator-NeSlYb\\clang-uiheader-SJWXXR",
+        "C:\\Users\\tietsikka\\AppData\\Local\\Temp\\QtCreator-DWTOGq\\clang-uiheader-VWVGUy",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -1040,7 +1040,7 @@
         "-DQT_NETWORK_LIB",
         "-DQT_CORE_LIB",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include",
         "-I",
@@ -1048,9 +1048,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\include\\QtCore",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build\\debug",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build\\debug",
         "-I",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\build",
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\build",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_32\\mkspecs\\win32-g++",
         "-isystem",
@@ -1074,9 +1074,9 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\janne\\Desktop\\OhjelmoinninSovellusprojekti\\group20\\ApiDLL\\tilitapahtumat.h"
+        "C:\\Projektit\\SovellusprojektiPankki\\group20\\ApiDLL\\tilitapahtumat.h"
     ],
-    "directory": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/build/.qtc_clangd",
-    "file": "C:/Users/janne/Desktop/OhjelmoinninSovellusprojekti/group20/ApiDLL/tilitapahtumat.h"
+    "directory": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/build/.qtc_clangd",
+    "file": "C:/Projektit/SovellusprojektiPankki/group20/ApiDLL/tilitapahtumat.h"
 }
 ]
