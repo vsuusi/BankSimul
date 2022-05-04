@@ -22,9 +22,6 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-public slots:
-
-
 private slots:
     void on_btn_syotakortti_clicked();
     void reciveRFID(QString response);
@@ -32,6 +29,5 @@ private slots:
 private:
     Ui::MainWindow *ui;
     pinInterface *objectpinInterface;
-    // Lukija_Dll *objLukija;
 };
 #endif // MAINWINDOW_H

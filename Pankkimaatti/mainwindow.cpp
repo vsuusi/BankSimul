@@ -31,23 +31,19 @@ void MainWindow::on_btn_syotakortti_clicked()
 
     objectpinInterface->pinAjastin->start(15000);
         qDebug() << "pin ajastin käyntiin 15 sec";
-
-
     objectpinInterface->exec();
 
 }
 
 void MainWindow::reciveRFID(QString response)
 {
-
     qDebug() << response;
     connect(objectpinInterface->pinAjastin, SIGNAL(timeout()),
             objectpinInterface, SLOT(timeoutPinUi()));
-
+    objectpinInterface->pinAjastin->setSingleShot(true);
     objectpinInterface->pinAjastin->start(15000);
         qDebug() << "pin ajastin käyntiin 15 sec";
     objectpinInterface->exec();
-
 }
 
 
