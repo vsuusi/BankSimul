@@ -10,9 +10,9 @@ nostoikkuna::nostoikkuna(double kayttissaldo, QByteArray kayttisToken, int Nosto
     objNostoApi = new ApiDLL(this);
     connect(objNostoApi, SIGNAL(sendTilitapahtumatToExe(QString)),
             this, SLOT(reciveTilitapahtumatInNosto(QString)));
-
     nostoToken = kayttisToken;
     idtili = NostoTiliId;
+    qDebug()<< "idtili: " + QString::number(idtili);
     saldo = kayttissaldo;
 }
 
@@ -99,10 +99,9 @@ void nostoikkuna::reciveTilitapahtumatInNosto(QString tilitapahtumat_data)
     idtilitapahtumat = idtilitapah.toInt();
 
     QString tapahtuma = "Nosto";
-    QDateTime paivaysDT = QDateTime::currentDateTime();
-    // QString paivays2 = QDateTime::currentDateTime().toTimeSpec(Qt::OffsetFromUTC).toString(Qt::ISODate);
-    QString paivays = paivaysDT.toString("yyyy-MM-dd hh:mm:ss");
-
+    const QDateTime paivaysDT = QDateTime::currentDateTime();
+    QDateTime paivaysDT2 = paivaysDT.addSecs(10800);
+    QString paivays = paivaysDT2.toString("yyyy-MM-dd hh:mm:ss");
     double summa = nostoSumma;
     int idkortti = idtili;
     qDebug() << "idtili: " + QString::number(idtili) + "idtilitapahtumat: " + QString::number(idtilitapahtumat);

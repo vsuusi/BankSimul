@@ -54,3 +54,9 @@ DEPENDPATH += $$PWD/../ApiDLL
 
 #INCLUDEPATH += $$PWD/'../apidll versiot/ApiDLLv6/ApiDLL'
 #DEPENDPATH += $$PWD/'../apidll versiot/ApiDLLv6/ApiDLL'
+
+
+win32: LIBS += -L$$PWD/'../PinDll ja testiExe/Pin_Dll/build/debug/' -lPin_Dll
+
+INCLUDEPATH += $$PWD/'../PinDll ja testiExe/Pin_Dll'
+DEPENDPATH += $$PWD/'../PinDll ja testiExe/Pin_Dll'

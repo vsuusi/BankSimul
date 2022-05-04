@@ -48,8 +48,6 @@ void pinInterface::reciveRFID(QString response)
     korttinumero = response;
 }
 
-
-
 void pinInterface::reciveToken(QByteArray token)
 {
     EXEtoken = token;

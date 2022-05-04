@@ -4,7 +4,7 @@
 #include "kayttoliittyma.h"
 #include "lukija_dll.h"
 #include "apidll.h"
-
+#include "pin_dll.h"
 
 #include <QtNetwork>
 #include <QNetworkAccessManager>
