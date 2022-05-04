@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     objectpinInterface = new pinInterface;
     connect(objectpinInterface->objLukija,SIGNAL(sendValueToExe(QString)),
             this,SLOT(reciveRFID(QString)));
+    ui->btn_syotakortti->hide();
 
 }
 

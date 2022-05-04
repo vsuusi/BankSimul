@@ -23,6 +23,10 @@ public:
     void Login(QString pin, QString korttinumero);
     void Asiakas(QByteArray kayttisToken, int asiakasId);
     void Tili(QByteArray kayttisToken, int korttiId);
+    void Tilitapahtumat(QByteArray kayttisToken, int NostoTiliId);
+
+    void addTilitapahtumat(QByteArray nostoToken, int idtilitapahtumat, QString paivays, QString tapahtuma, int idkortti, double summa, int idtili);
+    void UpdateTili(QByteArray kayttisToken, float saldo, int tiliId);
 
 
     QByteArray getTokenFromApi();
@@ -48,6 +52,15 @@ private:
     QNetworkReply *tilireply;
     QByteArray tiliresponse_data;
 
+    QNetworkAccessManager *postManager;
+    QNetworkReply *postreply;
+    QByteArray postresponse_data;
+
+    QNetworkAccessManager *putManager;
+    QNetworkReply *putreply;
+    QByteArray putresponse_data;
+
+
     tili_asiakas * pTili_Asiakas;
     asiakas * pAsiakas;
     kortti * pKortti;
@@ -61,6 +74,8 @@ signals:
     void sendTokenToExe(QByteArray);
     void sendAsiakasToExe(QString);
     void sendTiliToExe(QString, QString, QString);
+    void sendTilitapahtumatToExe(QString);
+    void addTtilitapahtumatToExe(QString);
 
     void QuitEventLoop();
 
@@ -69,6 +84,9 @@ public slots:
     void recvTiliSlot(QNetworkReply *reply);
     void recvLoginSlot(QNetworkReply *reply);
     void recvAsiakasSlot(QNetworkReply *reply);
+    void recvTilitapahtumatSlot(QNetworkReply *reply);
+    void addTilitapahtumatSlot(QNetworkReply *postreply);
+    void updateTiliSlot(QNetworkReply *reply);
 
 };
 

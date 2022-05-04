@@ -7,7 +7,6 @@ pinInterface::pinInterface(QWidget *parent) :
     ui(new Ui::pinInterface)
 {
     ui->setupUi(this);
-    // objectkayttoliittyma = new kayttoliittyma;
     pinAjastin = new QTimer(this);
 
     objLukija = new Lukija_Dll(this);
@@ -18,6 +17,8 @@ pinInterface::pinInterface(QWidget *parent) :
         connect(objPinApi, SIGNAL(sendTokenToExe(QByteArray)),
                 this, SLOT(reciveToken(QByteArray)));
 
+      ui->lineEdit_korttinumero->hide();
+
 }
 
 pinInterface::~pinInterface()
@@ -25,10 +26,14 @@ pinInterface::~pinInterface()
     delete ui;
     delete objectkayttoliittyma;
     delete pinAjastin;
+    delete objLukija;
+    delete objPinApi;
 
     pinAjastin = nullptr;
     ui = nullptr;
     objectkayttoliittyma = nullptr;
+    objLukija = nullptr;
+    objPinApi = nullptr;
 }
 
 void pinInterface::timeoutPinUi()
@@ -55,7 +60,7 @@ void pinInterface::reciveToken(QByteArray token)
 void pinInterface::on_btn_pinKirjaudu_clicked()
 {
     pin = ui->lineEdit_pinSyotto->text();
-    korttinumero = ui->lineEdit_korttinumero->text();
+    // korttinumero = ui->lineEdit_korttinumero->text();
     objPinApi->Login(pin, korttinumero);
 
     if(korttinumero == "0500"){
