@@ -27,9 +27,11 @@ public:
 
     QString nykyinenAsiakas;
     QByteArray kayttisToken;
-    QString saldo;
+    QString saldo_str;
+    double saldo;
     QString idtili;
     QString tilinumero;
+    int NostoTiliId;
 
 private slots:
     void reciveAsiakas(QString RAasiakas);
@@ -38,6 +40,8 @@ private slots:
     void on_btn_nostaRahaa_clicked();
     void on_btn_tilitapahtumat_clicked();
     void on_btn_kirjauduUlos_clicked();
+
+    void updateSaldoSlot(double saldo);
 
 signals:
     void QuitEventLoopTili();

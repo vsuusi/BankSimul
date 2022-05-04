@@ -9,6 +9,7 @@ kayttoliittyma::kayttoliittyma(QByteArray EXEtoken, int asiakasId, QWidget *pare
     ui->setupUi(this);
 
     kayttisToken = EXEtoken;
+    NostoTiliId = asiakasId;
 
     objKayttoApi = new ApiDLL(this);
     objKayttoApi->Asiakas(kayttisToken, asiakasId);
@@ -23,7 +24,7 @@ kayttoliittyma::kayttoliittyma(QByteArray EXEtoken, int asiakasId, QWidget *pare
     connect(this, &kayttoliittyma::QuitEventLoopTili, &loop, &QEventLoop::quit);
     loop.exec();
     objKayttoApi->Tili(kayttisToken, asiakasId);
-    ui->label_tilinSaldo->setText(QString::number(objectnostoikkuna->saldo));
+    // ui->label_tilinSaldo->setText(QString::number(objectnostoikkuna->saldo));
 
 }
 
@@ -45,31 +46,34 @@ kayttoliittyma::~kayttoliittyma()
 void kayttoliittyma::reciveAsiakas(QString RAasiakas)
 {
     nykyinenAsiakas = RAasiakas;
-    // nykyinenAsiakas.remove(0,2);
     QStringList palat = nykyinenAsiakas.split(",");
     QString nykyinenAsiakasTrimmed = palat.value(palat.length()- 3);
     qDebug()<< "nykyinen asiakas: " + nykyinenAsiakasTrimmed;
     ui->label_asiakasNimi->setText(nykyinenAsiakasTrimmed);
     QString asiakasId = palat.value(palat.length()-4);
     qDebug()<< "asiakas id: " + asiakasId;
-    objectnostoikkuna = new nostoikkuna;
-    objecttapahtumavirta = new tapahtumavirta;
+
     emit QuitEventLoopTili();
 }
 
 void kayttoliittyma::reciveTili(QString tili_dataId, QString tili_dataNumero, QString tili_dataSaldo)
 {
 
-    qDebug() << "tilidata exessä:" + tili_dataId + tili_dataNumero + tili_dataSaldo;
-    saldo = tili_dataSaldo;
+    qDebug() << "tilidata exessä:" + tili_dataId +","+ tili_dataNumero +","+ tili_dataSaldo;
+    saldo_str = tili_dataSaldo;
+    saldo = saldo_str.toDouble();
+
     tilinumero = tili_dataNumero;
     idtili = tili_dataId;
-    ui->label_tilinSaldo->setText(saldo);
-
+    ui->label_tilinSaldo->setText(saldo_str);
 
 }
 
-
+void kayttoliittyma::updateSaldoSlot(double uusiSaldo)
+{
+    saldo = uusiSaldo;
+    ui->label_tilinSaldo->setText(QString::number(saldo));
+}
 
 
 /****************buttons**********************/
@@ -78,13 +82,17 @@ void kayttoliittyma::reciveTili(QString tili_dataId, QString tili_dataNumero, QS
 
 void kayttoliittyma::on_btn_nostaRahaa_clicked()
 {
+    objectnostoikkuna = new nostoikkuna(saldo, kayttisToken, NostoTiliId);
+
+    connect(objectnostoikkuna, SIGNAL(updateSaldoSignal(double)),
+            this, SLOT(updateSaldoSlot(double)));
     objectnostoikkuna->exec();
-    ui->label_tilinSaldo->setText(objectnostoikkuna->getSaldo());
 }
 
 
 void kayttoliittyma::on_btn_tilitapahtumat_clicked()
 {
+    objecttapahtumavirta = new tapahtumavirta(kayttisToken, NostoTiliId);
     objecttapahtumavirta->exec();
 }
 
@@ -92,11 +100,9 @@ void kayttoliittyma::on_btn_tilitapahtumat_clicked()
 void kayttoliittyma::on_btn_kirjauduUlos_clicked()
 {
     this->close();
-    delete this;
-
-
-    // ja katkaise yhteystietokantaan
+    // delete this;
 }
+
 
 
 
