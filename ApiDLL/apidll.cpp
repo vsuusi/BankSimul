@@ -137,14 +137,21 @@ void ApiDLL::recvTilitapahtumatSlot(QNetworkReply *tilireply)
     QJsonDocument json_doc = QJsonDocument::fromJson(tiliresponse_data);
     QJsonArray json_array = json_doc.array();
     QString tilitapahtumat_data;
+    int limit = 0;
     foreach (const QJsonValue &value, json_array)
     {
+        if (limit < 10){
         QJsonObject json_obj = value.toObject();
         tilitapahtumat_data += QString::number(json_obj["idtilitapahtumat"].toInt())+
                 ", "+json_obj["paivays"].toString()+", "+json_obj["tapahtuma"].toString()+", "+QString::number(json_obj["summa"].toDouble())+
                 "€, \r";/*+QString::number(json_obj["idtili"].toInt())+","+QString::number(json_obj["idkortti"].toInt())+","; */
+        limit++;
+        } else {
+            emit sendTilitapahtumatToExe(tilitapahtumat_data);
+            break;
+        }
     }
-    emit sendTilitapahtumatToExe(tilitapahtumat_data);
+    //emit sendTilitapahtumatToExe(tilitapahtumat_data);
 
     tilireply->deleteLater();
     tiliManager->deleteLater();

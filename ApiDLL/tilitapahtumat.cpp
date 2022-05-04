@@ -33,16 +33,23 @@ void tilitapahtumat::recvTilitapahtumatFromDB(QNetworkReply *reply)
     QJsonDocument json_doc = QJsonDocument::fromJson(response_data);
     QJsonArray json_array = json_doc.array();
     QString RaTilitapahtumat;
+    int limit = 0;
     foreach (const QJsonValue &value, json_array) {
+        if (limit < 10){
         QJsonObject json_obj = value.toObject();
         RaTilitapahtumat+=QString::number(json_obj["id_tilitapahtumat"].toInt())+","+json_obj["paivays"].toInt()
                 +","+json_obj["tapahtuma"].toString()+","+json_obj["summa"].toDouble()
                 +","+json_obj["id_tili"].toInt()+","+json_obj["id_kortti"].toInt()+"\r";
+        limit ++;
+        } else {
+            emit sendTilitapahtumatToMain(RaTilitapahtumat);
+            break;
+        }
     }
 
     qDebug()<<RaTilitapahtumat;
 
-    emit sendTilitapahtumatToMain(RaTilitapahtumat);
+    //emit sendTilitapahtumatToMain(RaTilitapahtumat);
 
     reply->deleteLater();
     dbManager->deleteLater();
